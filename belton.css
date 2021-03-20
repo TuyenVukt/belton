@@ -1,0 +1,334 @@
+*{padding: 0;margin: 0}
+:root{
+    --font1: 'Oswald', sans-serif;
+    --font2: 'Amiri', serif;
+    --size1:50px;
+    --size2:25px;
+    --color2:#666;
+}
+.menu-top{
+    height: 600px;
+    background: url(http://belton.tommusdemos.wpengine.com/wp-content/uploads/sites/82/2018/04/fullscreen03.jpg);
+    top: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.menu-top::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(left,#00000070,#003eff05,#000000b0 100%);
+}
+.menu-top ._3cot{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.menu-top ._3cot .cot1{
+    width: 33.33%
+}
+.menu-top ._3cot .cot1.trai{}
+.menu-top ._3cot .cot1.trai a{
+    color: white;
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 30px;
+}
+.menu-top ._3cot .cot1.trai a:hover{
+    color: blue;
+}
+.menu-top ._3cot .cot1.giua{
+    width: 33.33%;
+    text-align: center;
+}
+.menu-top ._3cot .cot1.giua img{
+    height: 35px;
+    padding-top: 20px;
+}
+.menu-top ._3cot .cot1.phai{
+    width: 33.33%;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}  
+.menu-top ._3cot .cot1.phai a{
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 5px;
+    display: inline-block;
+}
+
+.menu-top .small{
+    position: absolute;
+    display: block;
+    width: 1170px;
+    color: white;
+    font-size: 20px;
+    left: 0px;
+    right: 0px;
+    margin: 250px auto;
+}
+.menu-top  .big {
+    width: 1170px;
+    height: 208px;
+    display: block;
+    color:white;
+    font-size: var(--size1);
+    font-family: var(--font1);
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 220px auto;
+    
+    
+    
+}
+/* end css top */
+.content2{
+    width: 1170px;
+    margin: auto;
+    padding: 80px 0;
+    display: flex;
+    font-family: var(--font2);
+   color: var(--color2);
+   font-size:var(--size2)  
+}
+.content2 .left{
+    width: 35%;
+}
+.content2 .left span{
+    display: block;
+    padding-bottom: 10px;
+}
+.content2 .left h4{
+     font-family: var(--font1);
+     font-size: 35px; 
+     font-weight: 400;
+     color: #2b2b2b;
+     display: block;
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+.content2 .right{
+    width: 65%;
+}
+.content2 .right p{
+    margin-bottom: 20px;
+}
+.content2 .right p.buy{
+    font-size: 22px; 
+    padding-left: 25px;
+}
+.content2 .right p.buy:before{
+    content:"\f178";
+    font: normal normal normal 25px/1 Fontawesome; 
+    transition: 0.7s;
+    left:-20px;
+    position: relative;
+
+}
+.content2 .right p.buy:hover::before{
+    left: -10px;
+    
+}
+/* end content2  */
+/* begin content3 */
+.content3{
+    background-color: rgb(4, 4, 4);
+    height: 1450px;
+}
+.content3 h2{
+    font-family: var(--font1);
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom:50px;
+    font-weight: 500;
+}
+.content3 .content_in {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 1330px;
+}
+.content3 .content_in .item{
+    display: block;
+    width:540px;
+    height: 540px;
+    position: relative;
+    margin:15px;
+    overflow: hidden;
+}
+
+.content3 .content_in .item img{
+    width: 100%;
+    display: block; 
+    transition: 0.4s;
+}
+.content3 .content_in .item:hover img{
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+.content3 .content_in .item p{
+    display: block;
+    position: absolute;
+    color: #fff;
+    left: 50px;top:260px;
+    font-family: var(--font1);
+    font-size: 32px;
+    font-weight: 500;
+    opacity: 0;
+    transition: 0.4s;
+}
+.content3 .content_in .item:hover p{
+    opacity: 1;
+    top:240px; 
+}
+.content3 .content_in .item .smallchar{
+    display: block;
+    color: #fff;
+    position: absolute;
+    font-family: var(--font1);
+    left: 50px;
+    top:300px;
+    font-family: 'Amiri', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0;
+    transition: 0.4s;
+    padding-top: 5px;
+}
+.content3 .content_in .item:hover .smallchar{
+    opacity: 1;
+    top: 280px;
+    transition-delay: 0.07s;
+}
+.content3 .bottom{
+    color: #fff;
+    display: inline-block;
+    display: block;
+
+    text-align: center;
+}
+.content3 .bottom::before{
+    content:"\f178";
+    display: inline-block;
+    font: normal normal normal 15px/1 Fontawesome; 
+    transition: 0.5s;
+    left:-5px;
+    position: relative;
+    padding-top:10px;
+    color: #666;
+}
+.content3 .bottom:hover::before{
+    left: 0px;
+}
+.content3 .bottom a{
+    text-decoration: none;
+    color: #666;
+}
+/* end content3 */
+/* begin logo */
+.logo {
+    display: flex;
+    width: 1110px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #666 solid 1px;
+}
+.logo img.logo_item{
+    width: 153px;
+    height: 153px;
+    display: block;
+    opacity: 0.5;
+}
+.logo img.logo_item:hover{opacity: 1;}
+.logo img.logo1{
+    width: 153px;
+    height:107px;
+    display: block;
+    opacity: 0.6;
+}
+.logo img.logo1:hover{opacity: 1;}
+/* end logo */
+/* begin text */
+.text{
+    display: flex;
+    width: 1110px;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text h1{
+    font-family: var(--font1);
+    font-size: 36px;
+    color:#343a40;
+    display: block;
+    width: 255px;
+    text-align: left;
+}
+.text .cent{
+    font-family: var(--font2);
+    font-size: 20px;
+    color: var(--color2);
+    display: block;
+    width: 540px;
+    margin-left: -200px;
+}
+.text .ri{
+    font-family: var(--font2);
+    font-size: 20px;
+    color: var(--color2);
+}
+.text .ri:before{
+    content:"\f178";
+    display: inline-block;
+    font: normal normal normal 15px/1 Fontawesome; 
+    transition: 0.5s;
+    left:-5px;
+    position: relative;
+    padding-top:10px;
+    color: #666;
+}
+.text .ri:hover:before{
+    left: 0px;
+}
+.end{
+    display: flex;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #171717;
+    margin-top: 120px;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.end span.a{
+    display: inline-block;
+    color: #fff;
+    padding-left: 119.5px;
+    padding-top: 55px;
+}
+.end span.a a{text-decoration: none;color: #666;}
+.end span.b {
+    display: inline-block;
+    color:#fff;
+    padding-right:119.5px;
+    padding-top: 55px;
+}
+.fa-heart{color: green;}
